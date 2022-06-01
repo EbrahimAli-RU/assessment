@@ -1,0 +1,19 @@
+//UTILS
+@import "utils/function";
+@import "utils/mixin";
+@import "utils/utiliti";
+@import "utils/variable";
+
+//BASE
+@import "base/reset";
+
+@import './shared/SwitchButton.scss';
+@import './shared/card';
+@import './shared/secondCard';
+
+@import './layout/navigation';
+@import "./banner/banner";
+@import "./component/aboutUs";
+@import "./component/companyServices";
+@import "./component/watchVideo";
+@import "./component/coreFeature";

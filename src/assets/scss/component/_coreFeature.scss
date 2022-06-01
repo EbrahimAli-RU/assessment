@@ -1,0 +1,14 @@
+.core_feature {
+    &_container {
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        padding: 10rem 0;
+    }
+
+    &_card_container  {
+        display: flex;
+        // justify-content: space-between;
+        // align-items: center;
+    }
+}
