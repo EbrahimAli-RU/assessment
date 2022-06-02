@@ -1,0 +1,57 @@
+.meet_our_advisor {
+    &_container {
+        width: 100%;
+        padding: 10rem 0;
+        position: relative;
+        z-index: 200;
+    }
+
+    &_circle {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        clip-path: circle(28.2% at 11% 49%);
+        background-color: #f5f5f5;
+        z-index: -100;
+    }
+
+    &_content {
+        width: 60%;
+        margin: auto;
+    }
+
+    &_top_div {
+        text-align: center;
+    }
+
+    &_profile_container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &_des {
+        font-size: 1.4rem;
+    }
+
+    &_company_skill_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 7rem;
+
+        &_left_div {
+            width: 45%;
+            // text-align: center;
+        }
+
+        &_right_div {
+            width: 50%;
+
+            div {
+                display: flex;
+            }
+        }
+    }
+}

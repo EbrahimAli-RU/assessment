@@ -1,0 +1,17 @@
+.important_article_card {
+    &_container {
+        width: 31%;
+        margin: 1rem 0;
+    
+        img {
+            width: 100%;
+        }
+    }
+
+    &_info_container {
+        background-color: #f5f5f5;
+        padding: 2rem;
+        margin-top: -1rem;
+    }
+}
+

@@ -2,6 +2,10 @@
   padding-bottom: 3rem;
 }
 
+.padding_1 {
+  padding: 0 1rem;
+}
+
 .display {
   display: block;
 }
@@ -73,6 +77,10 @@
   font-size: 1.6rem;
 }
 
+.font-size-14 {
+  font-size: 1.4rem;
+}
+
 .blockDisply {
   display: block;
 }
@@ -85,9 +93,22 @@
   color: black;
 }
 
+.colorPrimary {
+  color: var(--color-Primary);
+}
+
 .right {
   right: 2rem;
 }
 .left {
   left: 2rem;
+}
+
+.negative-margin-5 {
+  margin-top: -.8rem;
+}
+
+.flex_utils {
+  display: flex;
+  align-items: center;
 }

@@ -1,40 +1,67 @@
 .banner_container {
-    background-image: url(../../img/banner.jpg);
     width: 100%;
-    height: 70vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: red;
-    z-index: 1;
-
-    &::after {
-        content: "";
-        left: 0;
-        top: 0;
+    height: 100vh;
+    position: relative;
+    img {
         width: 100%;
         height: 100%;
-        opacity: .5;
-        background-color: black;
-        z-index: 10;
     }
 }
 
-
-.app_heading_container {
-    position: relative;
-}
-
-.app_heading_triangle_3 {
+.banner_shadow_container {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    clip-path: polygon(69% 0, 0 0, 0 72%);
-    background-color: aqua;
-    z-index: -50;
+    background-color: black;
+    opacity: .4;
 }
 
-.banner_info_container {
+.banner_info {
+    &_container {
+        position: absolute;
+        left: 20%;
+        top: 25%;
+        color: white;
+    }
+
+    &_title {
+        text-transform: uppercase;
+        letter-spacing: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    &_main_heading {
+        font-size: 6rem;
+
+        &_negate {
+            margin-top: -1.5rem;
+        }
+    }
+}
+
+.banner_trangle_top {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-Primary);
+    opacity: .7;
+    clip-path: polygon(23% 0, 0 0, 0 58%);
+
+    &_1 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--color-Primary);
+        opacity: .4;
+        clip-path: polygon(30% 0, 0 0, 0 73%);
+
+    }
 
 }
+

@@ -1,0 +1,51 @@
+.user_profile {
+    &_container {
+        width: 20rem;
+        height: 30rem;
+        display: inline-block;
+        margin: 2rem 0;
+        position: relative;
+    }
+
+    &_top {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        clip-path: polygon(38% 0, 0 0, 0 26%);
+        background-color: #ff4917;
+        z-index: 100;
+
+        &_1 {
+            position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        clip-path: polygon(52% 0, 0 0, 0 36%);
+        background-color: #ff4917;
+        opacity: .7;
+        z-index: 50;
+        }
+    }
+
+    &_img_div {
+        width: 100%;
+        height: 25rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+ 
+    &_info {
+        margin-top: 1.5rem;
+
+        &_role {
+            font-size: 1rem;
+        }
+    }
+    
+}

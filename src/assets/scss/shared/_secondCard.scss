@@ -1,10 +1,17 @@
-.second_card_container {
-    position: relative;
-    width: 33rem;
-    height: 36rem;
-    margin: 1rem;
-    // clip-path: polygon(0 37%, 0% 100%, 100% 99%);
+.second_card {
+    &_container {
+        position: relative;
+        width: 35rem;
+        height: 36rem;
+        margin: 1rem;
+    }
+
+    &_join_us {
+        font-weight: 300;
+    }
 }
+
+
 
 .second_card_top_div {
     position: absolute;
@@ -12,7 +19,8 @@
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-color: orange;
+    background-color: var(--color-Primary);
+    opacity: .8;
     clip-path: polygon(0 37%, 0% 100%, 100% 100%);
     z-index: 90;
 }
@@ -23,7 +31,8 @@
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-color: red;
+    background-color: var(--color-Primary);
+    opacity: .6;
     clip-path: polygon(0 27%, 100% 90%, 100% 100%, 0% 100%);
     z-index: 80;
 }
@@ -34,13 +43,11 @@
 }
 .second_card_info_div {
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: 7%;
+    bottom: 7%;
     color: white;
     width: 100%;
-    // height: 30%;
     z-index: 100;
-    // background-color: red;
 }
 
 .second_card_colo {

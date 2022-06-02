@@ -11,19 +11,25 @@ import AboutUs from "./component/AboutUs";
 import CompanyService from "./component/CompanyService";
 import WatchVideo from "./component/WatchVideo";
 import CoreFeature from "./component/CoreFeature";
+import WhatWe from "./component/shared/WhatWe";
+import MeetOurAdvisor from "./component/MeetOurAdvisor";
+import ImportantArticle from "./component/ImportantArticle";
 
 function App() {
   return (
     <div>
-      <div className="app_heading_container">
+      <div className="wrapper_container">
+        <div className="wrapper_container_tringle"></div>
         <Navigation />
-        <div className="app_heading_triangle_3"></div>
         <Banner />
       </div>
       <AboutUs />
       <CompanyService />
       <WatchVideo />
       <CoreFeature />
+      <WhatWe />
+      <MeetOurAdvisor />
+      <ImportantArticle />
       {/* <SwitchButton /> */}
       {/* <FontAwesomeIcon icon={faArrowRight} /> */}
       {/* <Card />

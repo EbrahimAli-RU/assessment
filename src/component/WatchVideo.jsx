@@ -5,9 +5,9 @@ import SwitchButton from "./shared/SwitchButton";
 const WatchVideo = () => {
   return (
     <div className="watch_video_container">
-      <video style={{ width: "100%", height: "50vh" }} autoplay controls>
+      <video style={{ width: "100%", height: "100%" }} autoplay controls>
         <source
-          style={{ width: "100%", height: "40vh" }}
+          style={{ width: "100%", height: "100%" }}
           src={Video}
           type="video/mp4"
         />
@@ -16,9 +16,12 @@ const WatchVideo = () => {
       </video>
       <div className="watch_video_info">
         <div className="watch_video_info_content">
-          <p>Watch Videos</p>
-          <h2>Exclusive Video Presentation About Recent Project</h2>
-          <p>
+          <p className="marginBottom-small">Watch Videos</p>
+          <h1>Exclusive Video Presentation</h1>
+          <h1 className="negative-margin-5 marginBottom-big">
+            About Recent Project
+          </h1>
+          <p className="font-size-14 marginBottom-extralarge">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard.
           </p>

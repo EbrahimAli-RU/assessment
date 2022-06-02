@@ -1,18 +1,22 @@
 .about_us {
     &_container {
-        width: 80%;
+        width: 60%;
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin: auto;
-        padding: 1rem 0;
+        padding: 10rem 0;
     
     }
     &_left_container {
-        width: 40%;
+        width: 45%;
     }
 
     &_right_container {
-        width: 40%;
+        width: 45%;
+
+        &_des {
+            font-size: 1.4rem;
+        }
     }
 }

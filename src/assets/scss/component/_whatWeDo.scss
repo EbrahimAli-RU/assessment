@@ -1,0 +1,24 @@
+.what_we_do {
+    &_container {
+        width: 100%;
+        background-color: #14212a;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem;
+        color: white;
+    }
+
+    &_left_container {
+        width: 45%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &_right_container {
+        width: 45%;
+    }
+}

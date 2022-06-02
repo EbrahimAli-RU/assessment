@@ -1,12 +1,18 @@
 import React from "react";
 import SecondCard from "./shared/SecondCard";
+import SectionSubHeader from "./shared/SectionSubHeader";
 
 const CoreFeature = () => {
   return (
     <div className="core_feature_container">
-      <p>Our Core Features</p>
-      <h2>We are Specialist for Many Business Solutions</h2>
-      <div className="core_feature_card_container">
+      <div style={{ textAlign: "center" }}>
+        <SectionSubHeader title="Our Core Features" show />
+        <h1 className="colorBlack">We are Specialist for Many</h1>
+        <h1 className="negative-margin-5 marginBottom-big colorBlack">
+          Business Solutions
+        </h1>
+      </div>
+      <div className="core_feature_card_container marginTop-big">
         <SecondCard />
         <SecondCard />
         <SecondCard />
