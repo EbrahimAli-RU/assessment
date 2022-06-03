@@ -35,9 +35,9 @@ const Card = () => {
             <path
               d="M1 10H33.75M33.75 10L24.8906 1M33.75 10L24.8906 19"
               stroke="black"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
         </div>

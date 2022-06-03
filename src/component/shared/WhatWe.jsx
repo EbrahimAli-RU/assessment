@@ -1,7 +1,5 @@
 import React from "react";
 import WhatWeDo from "../WhatWeDo";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faNotesMedical } from "@fortawesome/free-solid-svg-icons";
 
 const WhatWe = () => {
   return (

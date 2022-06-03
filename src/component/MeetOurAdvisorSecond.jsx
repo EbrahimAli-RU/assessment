@@ -40,7 +40,7 @@ const dummyUser = [
 ];
 
 const MeetOurAdvisorSecond = () => {
-  const [user, setUser] = useState(dummyUser);
+  const [user] = useState(dummyUser);
   const [activeUser, setActiveUser] = useState(0);
 
   const forWardHandler = () => {
@@ -66,8 +66,8 @@ const MeetOurAdvisorSecond = () => {
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M138.193 0.5C54.5949 59.521 0 156.885 0 267C0 447.045 145.955 593 326 593C506.045 593 652 447.045 652 267C652 156.885 597.405 59.521 513.807 0.5H138.193Z"
             fill="#FF4917"
           />
@@ -137,9 +137,9 @@ const MeetOurAdvisorSecond = () => {
             <path
               d="M1 12.5H43M43 12.5L31.6384 1M43 12.5L31.6384 24"
               stroke="#C5C6C8"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
           <div></div>
@@ -155,9 +155,9 @@ const MeetOurAdvisorSecond = () => {
             <path
               d="M43 12.5L1 12.5M1 12.5L12.3616 24M1 12.5L12.3616 1"
               stroke="#C5C6C8"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
         </div>

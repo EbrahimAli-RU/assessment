@@ -40,9 +40,9 @@ const ImportantArticleCard = () => {
             <path
               d="M1 5H16M16 5L11.9423 1M16 5L11.9423 9"
               stroke="#14212A"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
         </p>
