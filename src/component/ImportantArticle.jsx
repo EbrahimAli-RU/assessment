@@ -1,7 +1,7 @@
 import React from "react";
 import ImportantArticleCard from "./shared/ImportantArticleCard";
 import SectionSubHeader from "./shared/SectionSubHeader";
-import SwitchButton from "./shared/SwitchButton";
+import DemoSwitchButton from "./shared/DemoSwitchButton";
 
 const ImportantArticle = () => {
   return (
@@ -21,7 +21,12 @@ const ImportantArticle = () => {
           <h1 className="negative-margin-5 colorBlack">Latest News & Blog</h1>
         </div>
         <div>
-          <SwitchButton />
+          <DemoSwitchButton
+            title="View All News"
+            colorFlag="#ff4917"
+            slideColor="#14212a"
+            fontColor="white"
+          />
         </div>
       </div>
       <div className="important_article_card_div">

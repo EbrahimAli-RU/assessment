@@ -1,5 +1,5 @@
 import React from "react";
-import SwitchButton from "../shared/SwitchButton";
+import DemoSwitchButton from "../shared/DemoSwitchButton";
 
 const Navigation = () => {
   return (
@@ -14,7 +14,11 @@ const Navigation = () => {
         <li>Contacts</li>
       </ul>
       <div>
-        <SwitchButton />
+        <DemoSwitchButton
+          title="Consulting Now"
+          colorFlag="#14212a"
+          slideColor="#ff4917"
+        />
       </div>
     </div>
   );

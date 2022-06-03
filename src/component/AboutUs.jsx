@@ -1,7 +1,5 @@
 import React from "react";
-import SwitchButton from "./shared/SwitchButton";
-
-import Img from "../assets/img/img1.jpg";
+import DemoSwitchButton from "./shared/DemoSwitchButton";
 import SectionSubHeader from "./shared/SectionSubHeader";
 
 const AboutUs = () => {
@@ -738,7 +736,12 @@ const AboutUs = () => {
           </svg>{" "}
           Business & Consulting Agency
         </p>
-        <SwitchButton />
+        <DemoSwitchButton
+          title="Learn More"
+          colorFlag="#ff4917"
+          slideColor="#14212a"
+          fontColor="white"
+        />
       </div>
     </div>
   );

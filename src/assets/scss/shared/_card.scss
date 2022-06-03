@@ -5,7 +5,8 @@
         display: inline-block;
         text-align: center;
         padding: 3rem 2rem;
-        margin: 1rem;
+        box-sizing: border-box;
+        // margin: 1rem;
     }
 
     &_icon_div {
@@ -23,5 +24,27 @@
 
     &_down_arrow {
         margin-top: 1.5rem;
+    }
+}
+
+.card_container {
+    &_wrapper {
+        width: 30rem;
+        display: inline-block;
+        margin: 1rem;
+        cursor: pointer;
+        transition: all .2s ease-out;
+
+        &:hover .card_container_down_border {
+            background-color: var(--color-Primary);
+        }
+    }
+
+    &_down_border {
+        width: 80%;
+        height: .8rem;
+        background-color: #d0d0d0;
+        margin: auto;
+        transition: all .3s ease-out;
     }
 }

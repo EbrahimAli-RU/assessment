@@ -1,10 +1,4 @@
 import "./assets/scss/main.scss";
-import SwitchButton from "./component/shared/SwitchButton";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faArrowAltCircleRight, faIde } from '@fortawesome/free-regular-svg-icons'
-import { faArrowRight, faLightbulb } from "@fortawesome/free-solid-svg-icons";
-import Card from "./component/shared/Card";
-import SecondCard from "./component/shared/SecondCard";
 import Navigation from "./component/layout/Navigation";
 import Banner from "./component/banner/Banner";
 import AboutUs from "./component/AboutUs";
@@ -14,6 +8,9 @@ import CoreFeature from "./component/CoreFeature";
 import WhatWe from "./component/shared/WhatWe";
 import MeetOurAdvisor from "./component/MeetOurAdvisor";
 import ImportantArticle from "./component/ImportantArticle";
+import MeetOurAdvisorSecond from "./component/MeetOurAdvisorSecond";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
 
 function App() {
   return (
@@ -21,7 +18,12 @@ function App() {
       <div className="wrapper_container">
         <div className="wrapper_container_tringle"></div>
         <Navigation />
-        <Banner />
+        <Carousel autoPlay={true} infiniteLoop={true} showArrows={false}>
+          <Banner />
+          <Banner />
+          <Banner />
+          <Banner />
+        </Carousel>
       </div>
       <AboutUs />
       <CompanyService />
@@ -29,11 +31,8 @@ function App() {
       <CoreFeature />
       <WhatWe />
       <MeetOurAdvisor />
+      <MeetOurAdvisorSecond />
       <ImportantArticle />
-      {/* <SwitchButton /> */}
-      {/* <FontAwesomeIcon icon={faArrowRight} /> */}
-      {/* <Card />
-      <SecondCard /> */}
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import BannerImg from "../../assets/img/banner.jpg";
-import SwitchButton from "../shared/SwitchButton";
+import DemoSwitchButton from "../shared/DemoSwitchButton";
 const Banner = () => {
   return (
     <div className="banner_container">
@@ -17,9 +17,20 @@ const Banner = () => {
         <h1 className="banner_info_main_heading banner_info_main_heading_negate">
           With Modern Ideas
         </h1>
-        <div>
-          <SwitchButton />
-          <SwitchButton />
+        <div className="banner_btn_container marginTop-big">
+          <DemoSwitchButton
+            title="Get Started Now"
+            colorFlag="#ff4917"
+            slideColor="#14212a"
+            fontColor="white"
+          />
+          <div className="marginRight-big"></div>
+          <DemoSwitchButton
+            title="Our Services"
+            colorFlag="white"
+            slideColor="#ff4917"
+            fontColor="#14212a"
+          />
         </div>
       </div>
     </div>

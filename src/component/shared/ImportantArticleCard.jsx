@@ -28,7 +28,7 @@ const ImportantArticleCard = () => {
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry Ipsum has been
         </p>
-        <p className="colorBlack">
+        <p className="important_article_card_learn_more">
           Learn More{" "}
           <svg
             width="17"
@@ -47,6 +47,7 @@ const ImportantArticleCard = () => {
           </svg>
         </p>
       </div>
+      <div className="important_article_card_down_border"></div>
     </div>
   );
 };

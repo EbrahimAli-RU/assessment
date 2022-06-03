@@ -1,26 +1,22 @@
 .circle {
     &_container {
-        display: inline-block;
+        // background-color: red;
+        margin: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // width: 40%;
     }
 
     &_title {
-        margin-top: -5rem;
-        font-size: .8rem;
+        margin-top: 2rem;
+        font-size: 1.4rem;
+        color: black;
+        text-align: center;
     }
 }
 
-
-.circleBg {
-    stroke:  #f5f5f5;
-    stroke-width: 1.5rem;
-}
-
-.circle {
-    --ratio: 0.75;
-    stroke-dasharray: 328px; /* 2*PI*r */
-    stroke-dashoffset: calc(628 * (1 - var(--ratio)));
-    stroke:  #ff4917;
-    stroke-width: 1.5rem;
-    transform: rotate(-90deg);
-    transform-origin: center;
+.GHHG {
+    cursor: pointer;
+    // background-color: green;
 }

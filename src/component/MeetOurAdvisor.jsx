@@ -1,11 +1,31 @@
-import React from "react";
-import User from "../assets/img/user.jpg";
+import React, { useState } from "react";
 import Circle from "./shared/Circle";
 import SectionSubHeader from "./shared/SectionSubHeader";
-import SwitchButton from "./shared/SwitchButton";
+import DemoSwitchButton from "./shared/DemoSwitchButton";
 import UserProfile from "./shared/UserProfile";
 
+const demo = {
+  circle1: 33,
+  circle2: 2,
+  circle3: 50,
+  circle4: 24,
+};
+
 const MeetOurAdvisor = () => {
+  const [circleList, setCircleList] = useState(demo);
+
+  const handleMouseEnter = (id) => {
+    const circleListCopy = { ...circleList };
+    circleListCopy[id] = 100;
+    setCircleList(circleListCopy);
+  };
+
+  const handleMouseLeave = (id) => {
+    const circleListCopy = { ...circleList };
+    circleListCopy[id] = demo[id];
+    setCircleList(circleListCopy);
+  };
+
   return (
     <div className="meet_our_advisor_container">
       <div className="meet_our_advisor_circle"></div>
@@ -42,16 +62,45 @@ const MeetOurAdvisor = () => {
               form, by injected humour, or randomised words which don't look
               even.
             </p>
-            <SwitchButton />
+            <DemoSwitchButton
+              title="Learn More"
+              colorFlag="#ff4917"
+              slideColor="#14212a"
+              fontColor="white"
+            />
           </div>
           <div className="meet_our_advisor_company_skill_container_right_div">
             <div>
-              <Circle />
-              <Circle />
+              <Circle
+                handleMouseEnter={handleMouseEnter}
+                handleMouseLeave={handleMouseLeave}
+                id="circle1"
+                value={circleList.circle1}
+                title="Business Strategy"
+              />
+              <Circle
+                handleMouseEnter={handleMouseEnter}
+                handleMouseLeave={handleMouseLeave}
+                id="circle2"
+                value={circleList.circle2}
+                title="Financial Planing"
+              />
             </div>
             <div>
-              <Circle />
-              <Circle />
+              <Circle
+                handleMouseEnter={handleMouseEnter}
+                handleMouseLeave={handleMouseLeave}
+                id="circle3"
+                value={circleList.circle3}
+                title="Markeging Strategy"
+              />
+              <Circle
+                handleMouseEnter={handleMouseEnter}
+                handleMouseLeave={handleMouseLeave}
+                id="circle4"
+                value={circleList.circle4}
+                title="Relationship Buildup"
+              />
             </div>
           </div>
         </div>
