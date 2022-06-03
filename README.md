@@ -20,8 +20,6 @@ It's a Demo project
   * Meet our Advisors section there is attached facebook link also has nice hover effect.
   * Company Skills section when you hover on right side circle you will see that circle will fill up.
   * Meet Our Advisor section you cal click left and right arrow and profile will change.
-  * Important Articles section card has another nice hover effect.
-  * user can buy subscription(1 month, 6 month and 12 month). if user has no subscription then child can't read or listen audio book.
 
 ## Setup
 Projet Setup:
