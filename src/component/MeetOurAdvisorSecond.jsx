@@ -1,8 +1,60 @@
-import React from "react";
+import React, { useState } from "react";
 import profile from "../assets/img/profile1.jpg";
+import profile2 from "../assets/img/profile2.jpg";
+import profile3 from "../assets/img/profile3.jpg";
+import profile4 from "../assets/img/profile4.jpg";
+import profile5 from "../assets/img/profile5.jpg";
 import SectionSubHeader from "./shared/SectionSubHeader";
 
+const dummyUser = [
+  {
+    photo: profile,
+    name: "Richard E. Harrisona",
+    level: "CEO & Founder",
+    id: 1,
+  },
+  {
+    photo: profile2,
+    name: "Ben McCormack",
+    level: "CTO & Co-Founder",
+    id: 2,
+  },
+  {
+    photo: profile3,
+    name: "Michael Marano",
+    level: "Technical Director & CTO",
+    id: 3,
+  },
+  {
+    photo: profile4,
+    name: "Mark Kropf ",
+    level: "CEO & Founder",
+    id: 4,
+  },
+  {
+    photo: profile5,
+    name: "Ksenia Nekrasova ",
+    level: "Head of Customer",
+    id: 5,
+  },
+];
+
 const MeetOurAdvisorSecond = () => {
+  const [user, setUser] = useState(dummyUser);
+  const [activeUser, setActiveUser] = useState(0);
+
+  const forWardHandler = () => {
+    setActiveUser((prevState) => (prevState + 1) % user.length);
+  };
+
+  const backWardHandler = () => {
+    if (activeUser === 0) {
+      setActiveUser(user.length - 1);
+    } else {
+      setActiveUser((prevState) => (prevState - 1) % user.length);
+    }
+  };
+
   return (
     <div className="meet_second_container">
       <div className="meet_second_red_cir">
@@ -34,11 +86,11 @@ const MeetOurAdvisorSecond = () => {
             />
           </svg>
         </div>
-        <div className="meet_second_profile_div meet_second_profile_div_left">
-          <img classname="meet_second_profile_div" src={profile} alt="" />
+        <div className="active">
+          <img src={user[activeUser].photo} alt="" />
         </div>
-        <div className="meet_second_profile_div meet_second_profile_div_right">
-          <img src={profile} alt="" />
+        <div className="meet_second_profile_div_right">
+          <img src={user[(activeUser + 1) % user.length].photo} alt="" />
         </div>
       </div>
 
@@ -61,16 +113,20 @@ const MeetOurAdvisorSecond = () => {
         <div className="meet_second_intro_div">
           <img
             style={{ width: "5rem", height: "5rem", borderRadius: "50%" }}
-            src={profile}
+            src={user[activeUser].photo}
             alt=""
           />
           <div className="meet_second_intro_div_info">
-            <p className="colorBlack">Richard E. Harrisona</p>
-            <p className="font-size-14 colorPrimary">CEO & Founder</p>
+            <p className="colorBlack">{user[activeUser].name}</p>
+            <p className="font-size-14 colorPrimary">
+              {user[activeUser].level}
+            </p>
           </div>
         </div>
         <div style={{ marginTop: "4rem" }}>
           <svg
+            onClick={forWardHandler}
+            className="right_svg"
             width="44"
             height="25"
             viewBox="0 0 44 25"
@@ -80,7 +136,7 @@ const MeetOurAdvisorSecond = () => {
           >
             <path
               d="M1 12.5H43M43 12.5L31.6384 1M43 12.5L31.6384 24"
-              stroke="#FF4917"
+              stroke="#C5C6C8"
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -88,10 +144,12 @@ const MeetOurAdvisorSecond = () => {
           </svg>
           <div></div>
           <svg
+            onClick={backWardHandler}
+            className="left_svg"
             width="44"
             height="25"
             viewBox="0 0 44 25"
-            fill="none"
+            // fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path

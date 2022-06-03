@@ -5,7 +5,7 @@ const UserProfile = () => {
   return (
     <div className="user_profile_container">
       <div className="user_profile_fb">
-        <a href="/">
+        <a href="https://www.facebook.com/rokomari/">
           {" "}
           <svg
             width="11"

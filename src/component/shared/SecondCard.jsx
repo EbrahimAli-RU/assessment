@@ -1,11 +1,9 @@
 import React from "react";
 
-import Img1 from "../../assets/img/img1.jpg";
-
-const SecondCard = () => {
+const SecondCard = (props) => {
   return (
     <div className="second_card_container">
-      <img src={Img1} alt="meeting" className="second_card_image" />
+      <img src={props.photo} alt="meeting" className="second_card_image" />
       <div className="second_card_info_div">
         <svg
           width="35"
