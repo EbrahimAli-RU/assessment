@@ -1,4 +1,4 @@
-# Assessment for Rokomari as Front end Software Engineer
+# Assessment
 
 It's a Demo project
 
