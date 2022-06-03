@@ -133,9 +133,7 @@ const WhatWe = () => {
             </svg>
 
             <p className="what_we_achivement_number colorBlack">3568</p>
-            <p className="what_we_achivement_type font-size-14">
-              Expert team Member
-            </p>
+            <p className="what_we_achivement_type">Expert team Member</p>
           </div>
         </div>
       </div>

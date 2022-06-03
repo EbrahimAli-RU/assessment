@@ -5,10 +5,10 @@ import DemoSwitchButton from "./shared/DemoSwitchButton";
 import UserProfile from "./shared/UserProfile";
 
 const demo = {
-  circle1: 33,
+  circle1: 3,
   circle2: 2,
-  circle3: 50,
-  circle4: 24,
+  circle3: 5,
+  circle4: 4,
 };
 
 const MeetOurAdvisor = () => {
